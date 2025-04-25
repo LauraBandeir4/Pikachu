@@ -17,17 +17,23 @@ body {
     background-color: var(--primary-color);
 }
 
-header {
-    display: flex;
-    justify-content: left;
-    align-items: start;
-    height: 100px;
+.container {
+    height: 100%;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: auto;
 }
 
-h2 {}
+header {
+    background-color: #F5CF06;
+    margin-top: 7px;
+}
 
 main {
     flex-grow: 1;
 }
 
-footer {}
+footer {
+    margin-bottom: 24px;
+}
