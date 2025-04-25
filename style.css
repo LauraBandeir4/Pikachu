@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #F5CF06;
+    --sencondary-color: #8E4106;
+}
+
 body {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: yellow;
+    background-color: var(--primary-color);
 }
 
 header {
@@ -17,21 +22,12 @@ header {
     justify-content: left;
     align-items: start;
     height: 100px;
-    background-color: aqua;
 }
+
+h2 {}
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 1100px;
-    background-color: brown;
+    flex-grow: 1;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    background-color: blueviolet;
-}
+footer {}
