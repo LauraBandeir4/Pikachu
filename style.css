@@ -30,25 +30,23 @@ body {
 }
 
 header {
-   
     margin-top: 70px;
 }
 
-header a{
-   grid-column: 1/-1;
-   display: flex;
-   align-items: center;
-   gap: 16px;
-   text-decoration: none;
-   color: var(--sencondary-color);
- 
+header a {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--sencondary-color);
 }
 
 main {
     flex-grow: 1;
 }
 
-.title{
+.title {
     position: relative;
     grid-column: 1/-1;
     place-self: end center;
@@ -56,14 +54,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
-.title__text{
+
+.title__text {
     font-size: 20vw;
     color: #fff;
 }
 
-.title__transparent{
+.title__transparent {
     font-size: 27vw;
     color: #fff5;
     position: absolute;
@@ -71,33 +69,36 @@ main {
     z-index: -1;
 }
 
-.description{
-     grid-column: 1/7;
-     place-self: start;
-     color: var(--sencondary-color);
-     z-index: 1;
+.description {
+    grid-column: 1/7;
+    place-self: start;
+    color: var(--sencondary-color);
+    z-index: 1;
 }
 
-.description__title{
+.description__title {
     font-size: 4rem;
 }
-.description__text{
+
+.description__text {
     font-size: 1.2rem;
     width: 500px;
 }
-.action{
-     grid-column: 7/-1;
-     place-self: start end;
-     height: 100px;
-     width: 411px;
-     background-color: var(--sencondary-color);
-     color: #fff;
-     font-size: 3rem;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     z-index: 1;
+
+.action {
+    grid-column: 7/-1;
+    place-self: start end;
+    height: 100px;
+    width: 411px;
+    background-color: var(--sencondary-color);
+    color: #fff;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
+
 .footer__text {
     grid-column: 1/-1;
     place-self: center;
@@ -106,9 +107,59 @@ main {
     font-size: 1rem;
 }
 
-.pikachu-image{
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
+.pikachu-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*Responsidade Tablet*/
+
+@media (max-width:960px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .title {
+        place-self: start center;
+        transform: translateY(20%);
+    }
+    .description {
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        place-self: center;
+        text-align: center;
+    }
+    .description__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--sencondary-color);
+    }
+    .description__text {
+        place-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: -48px;
+        color: var(--sencondary-color);
+    }
+    .action {
+        grid-column: 1;
+        grid-row: 2;
+        place-self: end center;
+        margin-bottom: -260px;
+    }
+    .action a {
+        display: flex;
+        justify-content: end;
+        place-self: end center;
+        justify-content: end;
+    }
+    footer {
+        display: none;
+    }
 }
