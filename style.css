@@ -26,14 +26,31 @@ body {
 }
 
 header {
-    background-color: #F5CF06;
-    margin-top: 7px;
+   
+    margin-top: 70px;
 }
 
+header a{
+   grid-column: 1/-1;
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   text-decoration: none;
+   color: var(--sencondary-color);
+   font-size: 32px;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
 main {
+    background-color: tomato;
     flex-grow: 1;
 }
 
 footer {
+    background-color: plum;
     margin-bottom: 24px;
 }
