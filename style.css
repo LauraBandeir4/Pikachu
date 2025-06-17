@@ -45,7 +45,6 @@ header a{
 }
 
 main {
- background-color: tomato;
     flex-grow: 1;
 }
 
@@ -74,8 +73,9 @@ main {
 
 .description{
      grid-column: 1/7;
-     place-self: center start;
+     place-self: start;
      color: var(--sencondary-color);
+     z-index: 1;
 }
 
 .description__title{
@@ -87,7 +87,7 @@ main {
 }
 .action{
      grid-column: 7/-1;
-     place-self: center end;
+     place-self: start end;
      height: 100px;
      width: 411px;
      background-color: var(--sencondary-color);
@@ -95,7 +95,8 @@ main {
      font-size: 3rem;
      display: flex;
      justify-content: center;
-     align-items: center
+     align-items: center;
+     z-index: 1;
 }
 .footer__text {
     grid-column: 1/-1;
@@ -105,3 +106,9 @@ main {
     font-size: 1rem;
 }
 
+.pikachu-image{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
