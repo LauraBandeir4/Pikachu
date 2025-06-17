@@ -15,6 +15,10 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--primary-color);
+    font-size: 32px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container {
@@ -37,19 +41,44 @@ header a{
    gap: 16px;
    text-decoration: none;
    color: var(--sencondary-color);
-   font-size: 32px;
-  font-family: "Righteous", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+ 
 }
 
-
-
 main {
-    background-color: tomato;
+ background-color: tomato;
     flex-grow: 1;
 }
 
+.title{
+    position: relative;
+    grid-column: 1/-1;
+    place-self:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.title__text{
+    font-size: 20vw;
+    color: #fff;
+}
+
+.title__transparent{
+    font-size: 27vw;
+    color: #fff5;
+    position: absolute;
+    top: 0;
+}
+
+.description{
+
+     grid-column: 1/7;
+}
+.action{
+     background-color: blue;
+     grid-column: 7/-1;
+}
 footer {
     background-color: plum;
     margin-bottom: 24px;
